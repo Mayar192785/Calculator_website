@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <table class="calculator" >
+        <tr>
+            <td colspan="3"> <input id="result" class="display-box" type="text" disabled > </td>
+            
+        </tr>
+        <tr>
+            <td><button id="btn" class="clear">AC</button></td>
+            <td><button id="btn" class="backspace">-></button></td>
+        </tr>
+        <tr>
+          
+          <td><button class="operand1" value="1" onclick="display(value)">1</button></td>
+          <td><button class="operand2" value="2" onclick="display(value)">2</button></td>
+          <td><button class="operand3" value="3" onclick="display(value)">3</button></td>
+          <td><button class="multi" value="*">*</button></td>
+        </tr>
+        <tr>
+          <td><button class="operand4" value="4" onclick="display(value)">4</button></td>
+          <td><button class="operand5" value="5" onclick="display(value)">5</button></td>
+          <td><button class="operand6" value="6"onclick="display(value)">6</button></td>
+          <td><button class="subtract" value="-">-</button></td>
+        </tr>
+        <tr>
+          <td><button class="operand7" value="7" onclick="display(value)">7</button></td>
+          <td><button class="operand8" value="8" onclick="display(value)">8</button></td>
+          <td><button class="operand9" value="9" onclick="display(value)">9</button></td>
+          <td><button class="add" value="+" >+</button></td>
+        </tr>
+        <tr>
+          
+        <td><button class="operand0" value="0" onclick="display(value)">0</button></td>
+        <td><button class="decimal" value="." onclick="display(value)">.</button></td>
+        <td><button id="btn" class="equal" value="=">=</button></td>
+        <td><button class="divide" value="/">/</button></td>
+          
+        </tr>
+      </table>
+      <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
